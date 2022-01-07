@@ -1,0 +1,39 @@
+/* General setup */
+
+
+
+
+
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: 'arbutus_slabregular', sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1, h2 {
+  font-family: 'Odibee Sans', cursive;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}

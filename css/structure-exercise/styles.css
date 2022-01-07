@@ -1,0 +1,63 @@
+body{
+    background-image:radial-gradient(rgb(120,240,80),rgb(190,110,120));
+    background-size:cover;
+    background-blend-mode: lighten;
+    font:italic;
+    text-justify: auto;
+    text-shadow: blue;
+    text-shadow: 10px;
+}
+
+.special {
+    box-sizing: content-box;
+    width: 80%;
+    height: 200%;
+    background-image:unset;
+    color:violet;
+    background-color: indigo;
+    border:3px solid skyblue;
+  }
+
+  @media(max-width:400px){
+    .special {
+        size:80%;
+        background-image:unset;
+        color:aquamarine;
+        background-color: salmon;
+        border:3px solid wheat;
+      }
+  }
+
+p {
+    background-image:unset;
+  color: red;
+  background-color: indigo;
+  border:2in thick skyblue;
+  width:50%;
+  text-align: center;
+  align-self: center;
+}
+
+
+
+h1 {
+    background-image:unset;
+    border:2in thick skyblue;
+    text-shadow: black 1px 1px;
+    color:aqua;
+    background-color:salmon;
+}
+
+
+
+a:link{
+    background-image:unset;
+    color:chartreuse;
+    background-color: inherit;
+}
+a:hover{
+    background-image:unset;
+    color:purple;
+    background-color: seagreen;
+    transform:rotate(0.5turn)
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple setInterval clock</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="clock">00:00:00</p>
+    <button name="startButton" type="button" onclick="start()"> 
+        Start
+    </button>
+    <button name="stopButton" type="button" onclick="stop()"> 
+        Stop
+    </button>
+    <button name="resetButton" type="button" onclick="resetTimer()"> 
+        Reset
+    </button>
+    <script>
+       var started = false;
+       var startTime = 0;
+       var timer;
+       var time = 0;
+       var stopCount = 0;
+        
+        function start(){
+              if(!started){
+                startTime = Date.now();
+                timer = setInterval (updateTime,1000);
+                started = true;
+              }
+              
+            };
+          
+          function updateTime(){
+                time = (Date.now() - startTime) + stopCount;
+                document.querySelector('.clock').textContent = parseTime(time);
+          };
+
+          stop = function(){
+              clearInterval(timer);
+              stopCount = time;
+              started = false;
+          };
+
+          resetTimer= function(){
+              startTime = Date.now();
+              stopCount = 0;
+              updateTime()
+              if(started){
+                clearInterval(timer);
+                timer = setInterval (updateTime,1000);
+              }
+              
+          };
+          
+
+     
+
+      function parseTime(time){
+          var seconds = Math.floor(time/1000);
+          var hours = Math.floor(seconds / 3600);
+          seconds = seconds % 3600;
+          var minutes = Math.floor(seconds / 60);
+          seconds = seconds % 60;
+          var string = "";
+          var i = 0;
+          numbers = [hours, minutes, seconds];
+          for (var i = 0; i < numbers.length; i++){
+            if (numbers[i] < 10){
+                 string += "0";
+            }
+            string += numbers[i];
+            if( i < numbers.length-1){
+                string += ":";
+            }
+          }
+          return string;
+      }
+    </script>
+    
+  </body>
+</html>

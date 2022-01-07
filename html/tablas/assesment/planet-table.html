@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Planets info table</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Planets Table</h1>
+
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col style="border: 3px solid black;">
+        </colgroup>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">
+            Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
+        
+        <thead>
+            <tr>
+                <td colspan="2"></td>
+                <th>Name</th>
+                <th id="mass">Mass (10<sup>24</sup>kg)</th>
+                <th id="diameter">Diameter (km)</th>
+                <th id="density">Density (kg/m<sup>3</sup>)</th>
+                <th id ="gravity">Gravity (m/s<sup>2</sup>)</th>
+                <th id="day_length">Length of day (hours)</th>
+                <th id="sun_distance">Distance from Sun (10<sup>6</sup>km)</th>
+                <th id="mean_temperature_celsius">Mean temperature (°C)</th>
+                <th id="moons">Number of moons</th>
+                <th id="notes">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="4">Terrestrial planets</th>
+                <th id="mercury">Mercury</th>
+                <td headings="mass mercury">0.330</td>
+                <td headings="diameter mercury">4,879</td> 
+                <td headings= "density mercury">5427</td> 
+                <td headings="gravity mercury">3.7</td> 
+                <td headings="day_length mercury">4222.6</td> 
+                <td headings="sun_distance mercury">57.9</td> 
+                <td headings="mean_temperature_celsius mercury">167</td> 
+                <td headings="moons mercury">0</td>
+                <td headings="notes mercury">Closest to the Sun</td>
+            </tr>
+
+            <tr>
+                <th id="venus">Venus</th>
+                <td headings="mass venus">4.87</td>
+                <td headings="diameter venus">12,104 </td>
+                <td headings="density venus">5243</td>
+                <td headings="gravity venus">8.9</td>
+                <td headings="day_length venus">2802.0</td>
+                <td headings="sun_distance venus">108.2</td>
+                <td headings="mean_temperature_celsius venus">464 </td>
+                <td headings="moons venus">0</td>
+                <td headings="notes venus"></td>
+            </tr>
+
+            <tr>
+                <th id="earth">Earth</th>       
+                <td headings="mass earth">5.97</td>
+                <td headings="diameter earth">12,756 </td>
+                <td headings="density earth">5514</td>
+                <td headings="gravity earth">9.8</td>
+                <td headings="day_length earth">24.0</td>
+                <td headings="sun_distance earth">149.6</td>
+                <td headings="mean_temperature_celsius earth">15</td>
+                <td headings="moons earth">1</td>
+                <td headings="notes earth">Our world</td>
+            </tr>
+
+            <tr>
+                <th id="mars">Mars</th>        
+                <td headings="mass mars">0.642</td>
+                <td headings="diameter mars">6,792</td>
+                <td headings="density mars">3933</td>
+                <td headings="gravity mars">3.7 </td>
+                <td headings="day_length mars">24.7</td>
+                <td headings="sun_distance mars">227.9</td>
+                <td headings="mean_temperature_celsius mars">-65</td>
+                <td headings="moons mars">2</td>
+                <td headings="notes mars">The red planet</td>
+            </tr>
+
+            <tr>
+                <th id="jovian" rowspan="4">Jovian Planets</th>
+                <th id="gas_giants" rowspan="2">Gas giants</th>
+                <th id="jupiter">Jupiter</th>         
+                <td headings="mass jupiter">1898</td>
+                <td headings="diameter jupiter">142,984</td>
+                <td headings="density jupiter">1326</td>
+                <td headings="gravity jupiter">23.1</td>
+                <td headings="day_length jupiter">9.9</td>
+                <td headings="sun_distance jupiter">778.6</td>
+                <td headings="mean_temperature_celsius jupiter">-110</td>
+                <td headings="moons jupiter">67</td>
+                <td headings="notes jupiter">The largest planet</td>
+            </tr>
+            <tr>
+                <th id="saturn">Saturn</th>       
+                <td headings="mass saturn">568</td>
+                <td headings="diameter saturn">120,536</td>
+                <td headings="density saturn">687</td>
+                <td headings="gravity saturn">9.0</td>
+                <td headings="day_length saturn">10.7</td>
+                <td headings="sun_distance saturn">1433.5</td>
+                <td headings="mean_temperature_celsius saturn">-140</td>
+                <td headings="moons saturn">62</td>
+                <td headings="notes saturn"></td>
+            </tr>
+
+            <tr>
+                <th id="ice_giants" rowspan="2">Ice giants</th>
+                <th id="uranus">Uranus</th>
+                <td headings="mass uranus">86.8</td>
+                <td headings="diameter uranus">51,118 </td>
+                <td headings="density uranus">1271</td>
+                <td headings="gravity uranus">8.7</td>
+                <td headings="day_length uranus">17.2</td>
+                <td headings="sun_distance uranus">2872.5</td>
+                <td headings="mean_temperature_celsius uranus">-195</td>
+                <td headings="moons uranus">27</td>
+                <td headings="notes uranus"></td>
+            </tr>
+
+            <tr>
+                <th id="neptune">Neptune</th>       
+                <td headings="mass neptune">102</td>
+                <td headings="diameter neptune">49,528 </td>
+                <td headings="density neptune">1638 </td>
+                <td headings="gravity neptune">11.0</td>
+                <td headings="day_length neptune">16.1</td>
+                <td headings="sun_distance neptune">4495.1</td>
+                <td headings="mean_temperature_celsius neptune">-200</td>
+                <td headings="moons neptune">14</td>
+                <td headings="notes neptune"></td>
+            </tr>
+
+            <tr>
+                <th id="dwarf planets" colspan="2">Dwarf planets</th>
+                <th id="pluto">Pluto</th>        
+                <td headings="mass pluto">0.0146</td>
+                <td headings="diameter pluto">2,370</td>
+                <td headings="density pluto">2095 </td>
+                <td headings="gravity pluto">0.7</td>
+                <td headings="day_length pluto">153.3</td>
+                <td headings="sun_distance pluto">5906.4</td>
+                <td headings="mean_temperature_celsius pluto">-225</td>
+                <td headings="moons pluto">5</td>
+                <td headings="notes pluto">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+  </body>
+</html>
